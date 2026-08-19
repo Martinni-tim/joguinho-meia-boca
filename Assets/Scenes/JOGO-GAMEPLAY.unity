@@ -773,7 +773,7 @@ MonoBehaviour:
   - -3.4
   - 0
   - 3.4
-  alturaSpawn: 7
+  alturaSpawn: 2
 --- !u!4 &1773176607
 Transform:
   m_ObjectHideFlags: 0
