@@ -1,11 +1,14 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Essencial para gerenciar cenas
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class REINICIAR : MonoBehaviour
 {
-    public void ReiniciarJogo()
+    public void RecarregarCenaAtual()
     {
-        // Pega o índice da cena atual e a recarrega
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // 1. ISSO FAZ O TEMPO VOLTAR A CORRER
+        Time.timeScale = 1f; 
+        
+        // 2. ISSO RECARREGA A CENA
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 }
