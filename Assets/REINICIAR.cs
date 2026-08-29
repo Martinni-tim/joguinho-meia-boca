@@ -9,6 +9,6 @@ public class REINICIAR : MonoBehaviour
         Time.timeScale = 1f; 
         
         // 2. ISSO RECARREGA A CENA
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+       SceneManager.LoadScene("JOGO-GAMEPLAY"); 
     }
 }

@@ -17,9 +17,6 @@ public class GeradorObstaculos : MonoBehaviour
 
     void Start()
     {
-        // 1. PRIMEIRO: Você avisa pro jogo qual é o BPM lendo o que foi salvo no Menu
-        bpm = PlayerPrefs.GetFloat("BPM_Salvo", 117f); 
-
         // 2. DEPOIS: O jogo faz o cálculo usando esse BPM novo
         intervaloTempo = (60f / bpm) * multiplicadorBatidas;
     }
